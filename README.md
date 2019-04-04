@@ -8,7 +8,7 @@ In order to make it working you have to install these libraries.
 
 The script reads a config.json file and the images from a specified folder, I'll make it easy to understand with an example:
 
-We want to put the "Master Caution" button to the second button/first raw of the Steam Deck, so firstly we have to create two images for the master caution button, one for the "ON" state and the other for the "OFF" state.
+We want to put the "Master Caution" button to the second button/first raw of the Stream Deck, so firstly we have to create two images for it, one for the "ON" state and the other for the "OFF" state.
 
 <table>
 <tr><td>1.mc.on.png</td><td>1.mc.off.png</td></tr>
@@ -21,7 +21,7 @@ The file name is important and contains three dot separated informations:
 <tr><td>1</td><td>mc</td><td>on</td><td>png</td></tr>
 <tr><td>The position of the button, It's zero based, so the first one in the first raw is the number 0, the last one in the third row is the number 14</td><td>this is a name reference to the button, will be reported in the config.json</td><td>on/off for the two states</td><td>image extension, could be png or jpeg</td></tr></table>
 
-So what if we want to put the "Master Caution" in the last button of our stream deck, we have to change the name files to 14.mc.on.png and 14.mc.off.png , I think it's pretty easy, isn't it?
+So what if we want to put the "Master Caution" in the last button of our Stream Deck, we have to change the name files to "14.mc.on.png" and "14.mc.off.png", I think it's pretty easy, isn't it?
 
 OK after we created the images we have to put them in a defined folder created on the same level of the script. In this case a folder named "737800". After that we have to make some changes to the config.json.
 ```
@@ -45,7 +45,7 @@ OK after we created the images we have to put them in a defined folder created o
   }
 }
 ```
-It's self-explanatory but we can say something about it as well, the first part "MAIN" is needed to the script to work correctly, since we work through the UDP, you can use this script also on another pc put in the same network, in that case you have to change the  XPLANE_IP and SERVER_IP accordly, if you're planning to use it on the same pc you do not need to change anything till "SELECTED_AIRCRAFT", which is the reference to the settings for the aircraft written below, in this case "B738".
+It's kind of self-explanatory but we can say something about it as well, the first part "MAIN" is needed to the script to work correctly, since we work through the UDP, you can use this script also on another pc put in the same network, in that case you have to change the  XPLANE_IP and SERVER_IP accordly, if you're planning to use it on the same pc you do not need to change anything till "SELECTED_AIRCRAFT", which is the reference to the settings for the aircraft written below, in this case "B738".
 
 The aicraft settings need:
 - "imgfolder" path, the folder which contains our ON/OFF "Master Caution" images.
@@ -58,10 +58,12 @@ After set that, all we have to do is running the script (Please note that)
 That's all!
 
 The uploaded script in the repository has all functions displayed in the first image and works for the ZIBO 737 aicraft.
-In ordwr to make it working with another 737 aicraft you have to change all datarefs and commands reported in the config.json.
+In order to make it working with another aicraft you have to change all datarefs and commands reported in the config.json.
 It's something in alpha stage and I have to say that this script is provided "AS IS", without warranty of any kind.
 
-I had a fun making this, hope you'll enjoy it! Happy Flying!
+I've tested it on Windows 10 64 bit, I really do not know If could work on other os. Feel free to try it out.
+
+I had a lot of fun on making this, really, hope you'll enjoy it! Happy Flying!
 
 --It's the first time I use Python and GitHub so please understand me for any kind of errors I've made!--
 

@@ -1,0 +1,94 @@
+{
+  "MAIN": {
+    "XPLANE_IP": "127.0.0.1",
+    "XPLANE_PORT": 49000,
+    "SERVER_IP": "127.0.0.1",
+    "SERVER_PORT": 49008,
+	"SELECTED_AIRCRAFT": "B738"
+  },
+  "B738": {
+    "imgfolder": "737800/",
+    "drefcmds": [
+        {
+            "dataref": "laminar/B738/annunciator/master_caution_light",
+            "command": "laminar/B738/push_button/master_caution1",
+            "imgrefn": "mc"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/alt_hld_status",
+            "command": "laminar/B738/autopilot/alt_hld_press",
+            "imgrefn": "althold"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/vs_status",
+            "command": "laminar/B738/autopilot/vs_press",
+            "imgrefn": "vspeed"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/flight_director_pos",
+            "command": "laminar/B738/autopilot/flight_director_toggle",
+            "imgrefn": "fdirectca"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/flight_director_fo_pos",
+            "command": "laminar/B738/autopilot/flight_director_fo_toggle",
+            "imgrefn": "fdirectfo"
+        },
+        {
+            "dataref": "laminar/B738/annunciator/at_disconnect1",
+            "command": "laminar/B738/push_button/at_light_pilot",
+            "imgrefn": "atprst"
+        },
+        {
+            "dataref": "laminar/B738/annunciator/ap_disconnect1",
+            "command": "laminar/B738/push_button/ap_light_pilot",
+            "imgrefn": "apprst"
+        },
+        {
+            "dataref": "laminar/B738/annunciator/at_fms_disconnect1",
+            "command": "laminar/B738/push_button/fms_light_pilot",
+            "imgrefn": "fmcprst"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/hdg_sel_status",
+            "command": "laminar/B738/autopilot/hdg_sel_press",
+            "imgrefn": "hdgsel"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/lnav_status",
+            "command": "laminar/B738/autopilot/lnav_press",
+            "imgrefn": "lnav"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/vnav_status1",
+            "command": "laminar/B738/autopilot/vnav_press",
+            "imgrefn": "vnav"
+        },
+        {
+            "dataref": "laminar/B738/annunciator/fire_bell_annun",
+            "command": "laminar/B738/push_button/fire_bell_light1",
+            "imgrefn": "fwarn"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/speed_status1",
+            "command": "laminar/B738/autopilot/speed_press",
+            "imgrefn": "speed"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/lvl_chg_status",
+            "command": "laminar/B738/autopilot/lvl_chg_press",
+            "imgrefn": "lvlchg"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/cmd_a_status",
+            "command": "laminar/B738/autopilot/cmd_a_press",
+            "imgrefn": "cmd"
+        },
+        {
+            "dataref": "laminar/B738/autopilot/cws_a_status",
+            "command": "laminar/B738/autopilot/cws_a_press",
+            "imgrefn": "cws"
+        }
+	]
+  }
+}

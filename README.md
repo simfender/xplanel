@@ -23,7 +23,7 @@ The file name is important and contains three dot separated informations:
 
 So what if we want to put the "Master Caution" in the last button of our Stream Deck, we have to change the name files to "14.mc.on.png" and "14.mc.off.png", I think it's pretty easy, isn't it?
 
-OK after we created the images we have to put them in a defined folder created on the same level of the script. In this case a folder named "737800". After that we have to make some changes to the config.json.
+OK after we created the images we have to put them in a defined folder created on the same level of the script. In this case a folder named "737800". After that we have to make some change to the config.json.
 ```
 {
   "MAIN": {

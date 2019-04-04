@@ -19,7 +19,7 @@ The file name is important and contains three dot separated informations:
 <table>
 <tr><td colspan="4" align="center" >1.mc.on.png</td></tr>
 <tr><td>1</td><td>mc</td><td>on</td><td>png</td></tr>
-<tr><td>The position of the button, It's zero based, so the first one in the first raw is the number 0, the last one in the third row is the number 14</td><td>this is a name reference to the button, will be reported in the config.json</td><td>on/off for the two states</td><td>image extension, could be png or jpeg</td></tr></table>
+<tr><td>The position of the button, It's zero based, so the first one in the first raw is the number 0, the last one in the third row is the number 14</td><td>This is a name reference to the button, will be written in the config.json</td><td>On/Off for the two states</td><td>Image extension, could be png or jpeg</td></tr></table>
 
 So what if we want to put the "Master Caution" in the last button of our Stream Deck, we have to change the name files to "14.mc.on.png" and "14.mc.off.png", I think it's pretty easy, isn't it?
 
@@ -57,7 +57,7 @@ After set that, all we have to do is running the script (Please note that)
 
 That's all!
 
-The uploaded script in the repository has all functions displayed in the first image and works for the ZIBO 737 aicraft.
+The uploaded script in the repository has all functions displayed in the first image and works for the ZIBO737 aicraft.
 In order to make it working with another aicraft you have to change all datarefs and commands reported in the config.json.
 It's something in alpha stage and I have to say that this script is provided "AS IS", without warranty of any kind.
 

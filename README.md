@@ -53,7 +53,7 @@ The aicraft settings need:
 - "command" string, the X-PLane aircraft command related to the function we want assign to the button, in this case is reported the one of the ZIBO 737 "Master Caution"
 - "imgrefn" name, in this case "mc", the same one used in the ON/OFF images for "Master Caution"
 
-After set that, all we have to do is running the script (Please note that)
+After set that, all we have to do is running the script (Please note that you have to close the Elegato Stream Deck software before)
 
 That's all!
 

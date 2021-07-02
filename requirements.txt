@@ -1,0 +1,7 @@
+hid==1.0.4
+hidapi==0.10.1
+numpy==1.21.0
+pi==0.1.2
+Pillow==8.3.0
+pyxpudpserver==1.2.7
+streamdeck==0.8.4

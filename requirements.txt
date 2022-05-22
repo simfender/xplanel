@@ -1,0 +1,7 @@
+hid
+hidapi
+numpy
+pi
+Pillow
+pyxpudpserver
+streamdeck

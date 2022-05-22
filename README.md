@@ -3,8 +3,37 @@
 A simple script in python 3 that makes the Elgato Stream Deck device "smart" connected with X-Plane 11. With this script you can dynamically assign a button of the deck to a button/function of an aircraft cockpit. 
 X-Plane "datarefs" are used in order to get the statuses and update the buttons according to them, "commands" are used to send the deck buttons input to X-Plane. So all this explanation to say that the communication is bi-directional. The communication between the script and X-Plane is via UDP, that is native in the simulator so no plugins to be installed.
 
-Two important libraries are used: pyXPUDPServer (leleopard) and Python Stream Deck (abcminiuser)
-In order to make it working you have to install these libraries.
+## Requirements
+
+- Python3
+- Python3 libraries:
+	- hid
+	- hidapi
+	- numpy
+	- pi
+	- Pillow
+	- pyxpudpserver
+	- streamdeck
+
+## Installation
+
+XpLanel uses Python 3, so you need to install Python 3.
+
+Download the files, or perform
+
+	git clone https://github.com/simfender/xplanel
+
+Then, install the required libraries
+
+	python3 -m pip install -r requirements.txt
+
+## Usage
+
+Run the python file
+
+	python3 xplanel.py
+
+## Configuration
 
 The script reads a config.json file and the images from a specified folder, I'll make it easy to understand with an example:
 
